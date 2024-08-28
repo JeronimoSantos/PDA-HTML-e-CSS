@@ -3,55 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desenvolvedor Full-Stack</title>
-    <link rel="shortcut icon" type="imagens/icon" href="./imagens/planetaAgua.png">
+    <title>Portfólio Full-Stack</title>
+    <link rel="shortcut icon" type="imagens/icon" href="./imagens/tela-de-pintura.png">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <header>
-        <img src="./imagens/JeronimoS.Rodrigues.jpg" alt="Rosto de um menino negro com cabelo cacheado"/>
+<body id="inicio">
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="./imagens/JeronimoS.Rodrigues.jpg" alt="Rosto de um menino negro com cabelo cacheado" 
+        onmouseover="this.src='./imagens/jeronimopng.jpg'" onmouseout="this.src='./imagens/JeronimoS.Rodrigues.jpg'">
+        <p title="Do Mundo Real para um Mundo Virtual" class="cabecalho-imagem-paragrafo">"Do mundo real para<br> um mundo virtual"</p>
     </header>
-    <nav>
-        <a href="https://www.linkedin.com/in/jeronimo-s-rodrigues-dev/" target="_blank" title="Rede Social">Linkedin</a>
-        <a href="https://github.com/JeronimoSantos/PDA-HTML-e-CSS" target="_blank" title="Rede Social">GitHub</a>
-        <a href="https://www.instagram.com/jeronimo_santos_oficial/" target="_blank" title="Rede Social">instagram</a>
+    <nav class="navegacao">
+        <a class="navegacao-link" href="https://www.linkedin.com/in/jeronimo-s-rodrigues-dev/" target="_blank" title="Rede Social">
+            <img src="./imagens/linkedin.png">Linkedin</a>
+        <a class="navegacao-link" href="https://github.com/JeronimoSantos/PDA-HTML-e-CSS" target="_blank" title="Rede Social">
+            <img src="./imagens/github.png">GitHub</a>
+        <a class="navegacao-link" href="https://www.instagram.com/jeronimo_santos_oficial/" target="_blank" title="Rede Social">
+            <img src="./imagens/instagram.png">instagram</a>
     </nav>
-    <section>
         <main>
-            <div class="container">
-                <h1>Bem vindos ao meu Site</h1>
-                    <p>Olá, me chamo <strong>Jerônimo Santos Rodrigues</strong>, tenho <strong>20 anos</strong>, gosto de jogar praticamente <u>qualquer jogo</u>, 
-                        gosto bastande de <u>leitura</u>, pratico academia para <u>cuidar da saúde</u> e gosto de aproveitar meu tempo livre 
-                        <u>aprendendo coisas novas</u>.
+            <!--BIOGRAFIA-->
+            <section class="container">
+                <h1 class="tituloPrincipal">Bem vindos ao meu Portfólio</h1>
+                    <p class="tituloPrincipal-paragrafo">Olá, me chamo <strong>Jerônimo Santos Rodrigues</strong>, tenho <strong>20 anos</strong>,
+                         sou um jovem que gosta de programação e de como a tecnologia é capaz de fazer.</p>
+                    <p class="tituloPrincipal-paragrafo">Meu interesse por esse mundo começou de verdade em <strong>Outubro de 2023</strong> no programa do <strng>iFood
+                         com 50 mil bolsas de estudos</strng> em parceria com a <strong>DIO no Bootcamp: Potência Tec iFood</strong>, focado na <u>lógica de programação</u>. 
+                         Daí para frente eu não parei mais de <u>estudar</u>, conhecer <u>pessoas do ramo</u>, programar muito <u>código</u> e continuo assim até 
+                         <u>hoje</u>.
                     </p>
-                    <p>Acho incrivel o <strong>mundo da tecnologia</strong> e como está cada vez mais idispensavel conhecer o <u>digital</u>, 
-                        como as <strong>tecnologias funcionam</strong>, para não ficar para tras, <u>ultrapassado</u>, pois cada vez mais o tempo passa e
-                        mais coisas novas aparecem.
-                    </p>
-                    <blockquote>" O fato de você não estar onde gostaria deveria ser motivação suficiente para começar a agir".</blockquote>
-            </div>
-            <div class="container-dois">
-                <h2>Videos Referencias:</h2>
-            </div>
-            <div class="container-tres">
-                <iframe width="300" height="250" src="https://www.youtube.com/embed/IHMOu_KEW-0?si=5qrEDTY_lYf8MyhR" 
+                    <blockquote id="sitacao">" O fato de você não estar onde gostaria deveria ser motivação suficiente para começar a agir".</blockquote>
+            </section>
+
+            <!--HABILIDADES-->
+            <section class="container-habilidades">
+                <h2 class="tituloPrincipal">Minhas Habilidades Técnicas<br> (My Hard-Skills)</h2>
+                <section class="conteiner-lista">
+                    <ul class="container-nao-ordenada">
+                        <li class="lista-conteudo"><img src="./imagens/html.png" alt="HTML"></li>
+                        <li class="lista-conteudo"><img src="./imagens/css-3.png" alt="CSS"></li>
+                        <li class="lista-conteudo"><img src="./imagens/js.png" alt="JavaScript"></li>
+                        <li class="lista-conteudo"><img src="./imagens/react.png" alt="React"></li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="container-habilidades">
+                <h2 class="tituloPrincipal">Minhas Habilidades Pessoais<br> (My Soft-Skills)</h2>
+                <section class="conteiner-lista">
+                    <ul class="container-nao-ordenada">
+                        <li class="lista-conteudo2"><p>Comunicação</p></li>
+                        <li class="lista-conteudo2"><p>Trabalho em Equipe</p></li>
+                        <li class="lista-conteudo2"><p>Solução de Problemas</p></li>
+                        <li class="lista-conteudo2"><p>Criatividade</p></li>
+                        <li class="lista-conteudo2"><p>Lógica de Programação</p></li>
+                        <li class="lista-conteudo2"><p>Liderança</p></li>
+                    </ul>
+                </section>
+            </section>
+
+            <!--EXPERIÊNCIAS-->
+            <section class="container-experiencias">
+                <h2 class="tituloPrincipal">Minhas Experiências</h2>
+                <p class="paragrafo-experiencias">Para o fechamento de Módulo é proposto para os estudantes um projeto em equipe, 
+                    para colocarem em prática os conteúdos aprendidos no <strong>Módulo</strong>.
+                </p> 
+                <p class="paragrafo-experiencias">Fomos desafiados a criar uma 
+                    carta que será dedicada para o nosso futuro, utilizando o <strong>SCRATCH</strong> para a criação desta 
+                    carta, registrando as nossas metas e objetivos.
+                </p>
+                <a class="link-projeto" target="_blank" href="https://scratch.mit.edu/projects/1051172818">Carta do Amanhã</a>
+
+                <p class="paragrafo-experiencias">Foi passado na aula uma atividade que o objetivo era que os alunos fizessem sua própria <strong>Meta
+                     Smart</strong>, explicando o que exatamente queria realizar, como saberia que atingiu a meta, como 
+                     poderia alcançar essa meta, se valeria a pena e se manteria importante no longo prazo e 
+                     em quanto tempo levaria.
+                </p> 
+                <p class="paragrafo-experiencias">Eu escolhi desenvolver um projeto de um pequeno site explicando 
+                     com mais detalhes sobre a atividade e também como uma formar de exercitar meus conhecimentos 
+                     novos de <strong>HTML Semântico</strong> e <strong>CSS Responsivo</strong>.
+                </p>
+                <a class="link-projeto" target="_blank" href="https://projeto-smart.vercel.app/">Projeto SMART</a>
+            </section>
+
+            <section class="container-dois">
+                <h2 class="container-referencias">Videos Referências:</h2>
+            </section>
+            <section class="container-tres">
+                <iframe class="container-videos" width="300" height="250" src="https://www.youtube.com/embed/IHMOu_KEW-0?si=5qrEDTY_lYf8MyhR" 
                     title="YouTube video sobre HTML Semântico" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                     gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
 
-                <iframe width="300" height="250" src="https://www.youtube.com/embed/bCFTv8a59PE?si=I1MOIn2q6OuZANJB" 
+                <iframe class="container-videos" width="300" height="250" src="https://www.youtube.com/embed/bCFTv8a59PE?si=I1MOIn2q6OuZANJB" 
                     title="YouTube video sobre HTML e CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                     gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
-                <iframe width="300" height="250" src="https://www.youtube.com/embed/KbjLtEgmZ_E?si=XIkp7k6fqCeAC5yf" 
+                <iframe class="container-videos" width="300" height="250" src="https://www.youtube.com/embed/KbjLtEgmZ_E?si=XIkp7k6fqCeAC5yf" 
                     title="YouTube video sobre Css, FlexBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                     gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
-            </div>
+                <iframe class="container-videos" width="300" height="250" src="https://www.youtube.com/embed/ofs9UJJ62h0?si=WJvHKHY7jn0xPFSA" 
+                    title="YouTube video Como criar e estilizar um button" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                <iframe class="container-videos" width="300" height="250" src="https://www.youtube.com/embed/V_q2WSx_GY0?si=qsRSqRHd31jVPSoU" 
+                    title="YouTube video DUAS FORMAS DE TROCAR A IMAGEM AO PASSAR O MOUSE POR CIMA - HTML & CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                <iframe class="container-videos" width="300" height="250" src="https://www.youtube.com/embed/kyFiT4ofMwk?si=krFj0S1y0tNpJ_EX" 
+                    title="YouTube video Como deixar o Layout Responsivo no seu site " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                <iframe class="container-videos" width="300" height="250" src="https://www.youtube.com/embed/3NHEYUdBguY?si=C3cbk2GncWpv1rfe" 
+                    title="YouTube video Como e por que usar classes utilitárias no CSS?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </section>
         </main>
-    </section>
 </body>
-<footer>
-    <h3>Desenvolvido por Jerônimo S.Rodrigues</h3>
+<footer class="rodape">
+    <small><p><a class="rodape-inicio" href="#inicio">Voltar</a></small>
+    <h3 class="rosto-titulo">Desenvolvido por Jerônimo S.Rodrigues</h3>
 </footer>
 </html>
